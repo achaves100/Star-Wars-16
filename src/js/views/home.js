@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
-
 import { Link } from "react-router-dom";
 
 export const Home = () => (
@@ -23,7 +22,7 @@ export const Home = () => (
 					width={400}
 					height={300}
 					src="https://www.projectcasting.com/wp-content/uploads/2018/09/star-wars-696x400.jpg"
-					alt="People"
+					alt="Persons"
 				/>
 			</Link>
 		</span>
