@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Planets } from "./views/planets";
 import { Persons } from "./views/persons";
-import { Vehicles, Ships } from "./views/ships";
+// import { Ships } from "./views/ships";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
@@ -34,9 +34,7 @@ const Layout = () => {
 						<Route exact path="/persons">
 							<Persons />
 						</Route>
-						<Route exact path="/ships">
-							<Ships />
-						</Route>
+
 						<Route exact path="/demo">
 							<Demo />
 						</Route>

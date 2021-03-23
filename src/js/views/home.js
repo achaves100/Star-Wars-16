@@ -25,10 +25,5 @@ export const Home = () => (
 				/>
 			</Link>
 		</span>
-		<span>
-			<Link to="/ships">
-				<img width={400} height={300} src="https://wallpaperaccess.com/full/1183675.jpg" alt="Ships" />
-			</Link>
-		</span>
 	</div>
 );
