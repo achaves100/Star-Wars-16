@@ -13,18 +13,11 @@ export const Persons = () => {
 					{store.peoples.map((item, index) => {
 						return (
 							<div className="col-md-4 mb-3" key={index}>
-								<Card name={item.name} hair={item.hair} eyes={item.eyes} />
+								<Card name={item.name} hair={item.hair_color} eyes={item.eye_color} />
 							</div>
 						);
 					})}
 				</ul>
-			</div>
-
-			<div className="text-centered mt-5">
-				<h1>Persons</h1>
-				<Link to="/">
-					<button className="btn btn-primary">Home</button>
-				</Link>
 			</div>
 		</>
 	);

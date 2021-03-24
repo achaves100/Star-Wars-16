@@ -10,14 +10,17 @@ export const Card2 = props => {
 			/>
 			<div className="card-body">
 				<h5 className="card-title">{props.name}</h5>
-				<p className="card-text">{props.diameter}</p>
+				<p className="card-text">{props.climate}</p>
 				<p className="card-text">{props.terrain}</p>
 			</div>
+			<a href="#" className="btn btn-primary">
+				Read more...
+			</a>
 		</div>
 	);
 };
 Card2.propTypes = {
 	name: PropTypes.string,
-	diameter: PropTypes.string,
+	climate: PropTypes.string,
 	terrain: PropTypes.string
 };
