@@ -13,7 +13,11 @@ export const Planets = () => {
 					{store.planets.map((item, index) => {
 						return (
 							<div className="col-md-4 mb-3" key={index}>
-								<Card2 name={item.name} climate={item.climate} terrain={item.terrain} />
+								<Card2
+									name={"Name: " + item.name}
+									climate={"Climate: " + item.climate}
+									terrain={"Terrain: " + item.terrain}
+								/>
 							</div>
 						);
 					})}
