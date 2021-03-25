@@ -5,6 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Planets } from "./views/planets";
 import { Persons } from "./views/persons";
 import { InfoPerson } from "./views/infoperson";
+import { InfoPlanet } from "./views/infoplanet";
 // import { Ships } from "./views/ships";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
@@ -37,6 +38,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/infoperson/:id">
 							<InfoPerson />
+						</Route>
+						<Route exact path="/infoplanet/:id">
+							<InfoPlanet />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />
