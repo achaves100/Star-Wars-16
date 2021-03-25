@@ -13,9 +13,6 @@ export const Card2 = props => {
 				<p className="card-text">{props.climate}</p>
 				<p className="card-text">{props.terrain}</p>
 			</div>
-			<a href="#" className="btn btn-primary">
-				Read more...
-			</a>
 		</div>
 	);
 };

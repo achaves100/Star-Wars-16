@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export const Card = props => {
 	return (
@@ -13,14 +14,15 @@ export const Card = props => {
 				<p className="card-text">{props.hair}</p>
 				<p className="card-text">{props.eyes}</p>
 			</div>
-			<a href="#" className="btn btn-primary">
-				Read more...
-			</a>
+			<Link to={"/infoperson/" + props.index}>
+				<button className="btn btn-primary">Learn more...</button>
+			</Link>
 		</div>
 	);
 };
 Card.propTypes = {
 	name: PropTypes.string,
 	hair: PropTypes.string,
-	eyes: PropTypes.string
+	eyes: PropTypes.string,
+	index: PropTypes.number
 };

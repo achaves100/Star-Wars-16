@@ -17,6 +17,7 @@ export const Persons = () => {
 									name={"Name: " + item.name}
 									hair={"Hair Color: " + item.hair_color}
 									eyes={"Eyes Color: " + item.eye_color}
+									index={index}
 								/>
 							</div>
 						);
