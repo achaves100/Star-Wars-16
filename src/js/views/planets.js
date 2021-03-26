@@ -17,6 +17,7 @@ export const Planets = () => {
 									name={"Name: " + item.name}
 									climate={"Climate: " + item.climate}
 									terrain={"Terrain: " + item.terrain}
+									index={index}
 								/>
 							</div>
 						);
