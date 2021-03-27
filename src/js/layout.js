@@ -6,6 +6,7 @@ import { Planets } from "./views/planets";
 import { Persons } from "./views/persons";
 import { InfoPerson } from "./views/infoperson";
 import { InfoPlanet } from "./views/infoplanet";
+
 // import { Ships } from "./views/ships";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
