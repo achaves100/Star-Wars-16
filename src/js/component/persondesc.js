@@ -6,18 +6,18 @@ export const PersonDesc = () => (
 	<Container>
 		<Container>
 			<Row>
-				<Col xs={6} md={5}>
+				<Col xs={6} md={6}>
 					<Container>
 						<Image
-							src="https://www.projectcasting.com/wp-content/uploads/2018/09/star-wars-696x400.jpg"
-							width={400}
-							height={300}
+							src="https://images.saymedia-content.com/.image/t_share/MTc1MTEzODQ1NTYzNjY0MTk2/benjamin-coxs-top-20-coolest-star-wars-characters.jpg"
+							width={550}
+							height={375}
 							rounded
 						/>
 					</Container>
 				</Col>
 
-				<Col xs={6} md={7}>
+				<Col xs={6} md={6}>
 					<Container>
 						<h6 className="text-left ml-3">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque

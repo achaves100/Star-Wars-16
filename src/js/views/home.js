@@ -7,20 +7,15 @@ export const Home = () => (
 		<h1>STAR WARS</h1>
 		<span>
 			<Link to="/planets">
-				<img
-					width={400}
-					height={300}
-					src="https://www.teahub.io/photos/full/68-686120_star-wars-death-star-background.jpg"
-					alt="Planets"
-				/>
+				<img width={600} height={400} src="https://wallpapercave.com/wp/Cq0wdqN.jpg" alt="Planets" />
 			</Link>
 		</span>
 		<span>
 			<Link to="/persons">
 				<img
-					width={400}
-					height={300}
-					src="https://www.projectcasting.com/wp-content/uploads/2018/09/star-wars-696x400.jpg"
+					width={600}
+					height={400}
+					src="https://cdn.mos.cms.futurecdn.net/Rv3YiBSiN2nyiP66iFdTj3-1200-80.jpg"
 					alt="People"
 				/>
 			</Link>

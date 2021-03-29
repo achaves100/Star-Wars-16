@@ -7,7 +7,7 @@ export const Card = props => {
 		<div className="card" style={{ width: "18rem;" }}>
 			<img
 				className="card-img-top"
-				src="https://www.projectcasting.com/wp-content/uploads/2018/09/star-wars-696x400.jpg"
+				src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg"
 			/>
 			<div className="card-body">
 				<h5 className="card-title">{props.name}</h5>

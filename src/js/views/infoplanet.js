@@ -8,12 +8,7 @@ export const InfoPlanet = () => (
 			<Row>
 				<Col xs={6} md={5}>
 					<Container>
-						<Image
-							src="https://www.teahub.io/photos/full/68-686120_star-wars-death-star-background.jpg"
-							width={400}
-							height={300}
-							rounded
-						/>
+						<Image src="https://wallpapercave.com/wp/oha7fD9.jpg" width={400} height={300} rounded />
 					</Container>
 				</Col>
 
