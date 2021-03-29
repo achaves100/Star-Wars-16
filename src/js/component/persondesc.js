@@ -33,7 +33,7 @@ export const PersonDesc = () => (
 			</Row>
 		</Container>
 		<Container>
-			<Table bordered hover>
+			<Table bordered hover variant="dark">
 				<tbody>
 					<tr>
 						<td>Mark</td>
