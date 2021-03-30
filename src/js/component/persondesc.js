@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import PropTypes from "prop-types";
 import { Container, Table, Image, Row, Col } from "react-bootstrap";
 
-export const PersonDesc = () => (
+export const PersonDesc = props => {
 	<Container>
 		<Container>
 			<Row>
@@ -19,7 +19,7 @@ export const PersonDesc = () => (
 
 				<Col xs={6} md={6}>
 					<Container>
-						<h6 className="text-left ml-3">
+						<h6 className="text-left ml-3" style={{ color: "white" }}>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
 							architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
@@ -34,15 +34,36 @@ export const PersonDesc = () => (
 		</Container>
 		<Container>
 			<Table bordered hover variant="dark">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Birth Year</th>
+						<th>Gender</th>
+						<th>Heigth</th>
+						<th>Skin Color</th>
+						<th>Eye Color</th>
+					</tr>
+				</thead>
 				<tbody>
 					<tr>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
+						<td>{props.name}</td>
+						<td>{props.birth_year}</td>
+						<td>{props.gender}</td>
+						<td>{props.height}</td>
+						<td>{props.skin_color}</td>
+						<td>{props.eye_color}</td>
 					</tr>
 				</tbody>
 			</Table>
 		</Container>
 		;
-	</Container>
-);
+	</Container>;
+	PersonDesc.propTypes = {
+		name: PropTypes.string,
+		birth_year: PropTypes.number,
+		gender: PropTypes.string,
+		height: PropTypes.number,
+		skin_color: PropTypes.string,
+		eye_color: PropTypes.string
+	};
+};
