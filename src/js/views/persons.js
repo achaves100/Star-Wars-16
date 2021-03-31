@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { Card } from "../component/card";
 
 export const Persons = () => {
-	const { store } = useContext(Context);
+	const { store, actions } = useContext(Context);
 	console.log("data", store.peoples);
+	useEffect(() => {
+		actions.loadPeoples();
+	}, []);
 	return (
 		<>
 			<div className="Container">

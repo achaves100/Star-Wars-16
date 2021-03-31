@@ -10,9 +10,10 @@ export const InfoPerson = () => {
 	return (
 		<Container>
 			{store.peoples.map((item, index) => {
-				if (index == params.id) {
-					return <PersonDesc />;
-				}
+				<span key={index}>{JSON.stringify(item)}</span>;
+				// if (index == params.id) {
+				// 	return <PersonDesc />;
+				// }
 			})}
 		</Container>
 	);
