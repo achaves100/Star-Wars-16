@@ -18,7 +18,7 @@ export const Home = () => {
 					</Link>
 					<Carousel.Caption>
 						<h3>Persons</h3>
-						<p>Learn more about your favorite Star Wars characters</p>
+						<h4>Learn more about your favorite Star Wars characters</h4>
 					</Carousel.Caption>
 				</Carousel.Item>
 
@@ -34,7 +34,7 @@ export const Home = () => {
 					</Link>
 					<Carousel.Caption>
 						<h3>Planets</h3>
-						<p>Learn more about your favorite Star Wars planets</p>
+						<h4>Learn more about your favorite Star Wars planets</h4>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
