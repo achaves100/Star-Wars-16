@@ -34,7 +34,7 @@ export const PersonDesc = props => {
 				</Row>
 			</Container>
 			<Container>
-				<Table bordered hover variant="dark">
+				<Table bordered hover variant="dark text-center">
 					<thead>
 						<tr>
 							<th>Name</th>

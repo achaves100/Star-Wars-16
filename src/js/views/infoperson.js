@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Link, useParams } from "react-router-dom";
-import { Container, Table, Image, Row, Col } from "react-bootstrap";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import { PersonDesc } from "../component/persondesc";
 import { Context } from "../store/appContext";
 
