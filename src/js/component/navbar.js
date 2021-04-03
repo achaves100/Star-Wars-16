@@ -12,13 +12,13 @@ export const NavbarMenu = () => {
 					<img
 						width={80}
 						height={30}
-						src="https://www.freepnglogos.com/uploads/star-wars-logo-png-10.png"
+						src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG32.png"
 						alt="Star Wars"
 					/>
 				</Link>
 
 				<Navbar.Collapse className="justify-content-end">
-					<DropdownButton variant="dark" title="Favorites">
+					<DropdownButton title="Favorites">
 						<Dropdown.Item>Empty</Dropdown.Item>
 					</DropdownButton>
 				</Navbar.Collapse>
