@@ -11,7 +11,16 @@ export const InfoPerson = () => {
 		<Container>
 			{store.peoples.map((item, index) => {
 				if (index == params.id) {
-					return <PersonDesc />;
+					return (
+						<PersonDesc
+							name={item.name}
+							birth_year={item.birth_year}
+							gender={item.gender}
+							height={item.height}
+							skin_color={item.skin_color}
+							eye_color={item.eye_color}
+						/>
+					);
 				}
 			})}
 		</Container>
