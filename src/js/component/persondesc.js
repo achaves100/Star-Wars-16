@@ -21,13 +21,26 @@ export const PersonDesc = props => {
 					<Col xs={6} md={6}>
 						<Container>
 							<h6 className="text-left ml-3" style={{ color: "white" }}>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-								laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-								architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-								sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-								voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-								amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-								labore et dolore magnam aliquam quaerat voluptatem.
+								<p>
+									The life of Anakin Skywalkers was once that of a child slave on the harsh desert
+									planet of Tatooine, before the Jedi master Qui-Gon Jinn discovered him and
+									determined that Anakin was the chosen one due to being conceived by the
+									medichlorians. Under the training of Obi-Wan Kenobi, Anakin became more in tune with
+									the Force, and rose among the Jedi ranks.
+								</p>{" "}
+								<p>
+									But as he grew older, he only felt more and more imperfect. With the tipping point
+									being a dream about his wife dying at birth, Anakin turned to the dark side of the
+									Force to fix himself, which resulted in him falling into lava during a battle
+									against Obi-Wan.
+								</p>{" "}
+								<p>
+									Even though he was severely damaged, the Emperor rescued him and supported him with
+									new armor, turning him into Darth Vader. Years later, after discovering his son,
+									Vader had a change of heart, and sacrificed himself to save him from the Emperor and
+									the Dark Side. After life, Anakin would spend his afterlife as a spirit of the
+									Force, guiding the next generations of Skywalkers to come.
+								</p>
 							</h6>
 						</Container>
 					</Col>
