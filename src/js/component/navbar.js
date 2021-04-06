@@ -4,7 +4,35 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 export const NavbarMenu = () => {
-	const { store, actions } = useContext(Context);
+    const { store, actions } = useContext(Context);
+    
+	const FavoriteRemove = index => {
+		actions.removeFavorites(index);
+	};
+
+	const FavoriteAdd = () => {
+		if (store.favoritos) {
+			return store.favoritos.map((item, index) => {
+				return (
+					<a className="dropdown-item" href="#" key={index}>
+						{item}
+
+						<button
+							type="button"
+							className="btn btn-dark float-right"
+							onClick={e => {
+								FavoriteRemove(index);
+							}}>
+							<i className="fas fa-trash" />
+						</button>
+					</a>
+				);
+			});
+		} else {
+		}
+	};
+
+
 	return (
 		<Container fluid>
 			<Navbar bg="dark" text-white>
@@ -19,7 +47,7 @@ export const NavbarMenu = () => {
 
 				<Navbar.Collapse className="justify-content-end">
 					<DropdownButton title="Favorites">
-						<Dropdown.Item>Empty</Dropdown.Item>
+						<Dropdown.Item>{FavoriteAdd}</Dropdown.Item>
 					</DropdownButton>
 				</Navbar.Collapse>
 			</Navbar>
