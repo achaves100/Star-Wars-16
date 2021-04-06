@@ -17,7 +17,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			]
-		},
+        },
+
 		actions: {
 			loadPeoples: async () => {
 				const url = "https://swapi.dev/api/people/";
