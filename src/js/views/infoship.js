@@ -14,11 +14,11 @@ export const InfoShip = () => {
 					return (
 						<ShipDesc
 							name={item.name}
-							birth_year={item.birth_year}
-							gender={item.gender}
-							height={item.height}
-							skin_color={item.skin_color}
-							eye_color={item.eye_color}
+							manufacturer={item.manufacturer}
+							max_atmosphering_speed={item.max_atmosphering_speed}
+							hyperdrive_rating={item.hyperdrive_rating}
+							length={item.length}
+							starship_class={item.starship_class}
 						/>
 					);
 				}
