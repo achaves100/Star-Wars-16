@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Dropdown, Container, DropdownButton, Navbar } from "react-bootstrap";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 export const NavbarMenu = () => {
-    const { store, actions } = useContext(Context);
-    
-	const FavoriteRemove = index => {
+	const { store, actions } = useContext(Context);
+
+	const DeleteFavorite = index => {
 		actions.removeFavorites(index);
 	};
 
-	const FavoriteAdd = () => {
+	const ShowFavorites = () => {
 		if (store.favoritos) {
 			return store.favoritos.map((item, index) => {
 				return (
@@ -21,7 +21,7 @@ export const NavbarMenu = () => {
 							type="button"
 							className="btn btn-dark float-right"
 							onClick={e => {
-								FavoriteRemove(index);
+								DeleteFavorite(index);
 							}}>
 							<i className="fas fa-trash" />
 						</button>
@@ -32,7 +32,6 @@ export const NavbarMenu = () => {
 		}
 	};
 
-
 	return (
 		<Container fluid>
 			<Navbar bg="dark" text-white>
@@ -40,14 +39,14 @@ export const NavbarMenu = () => {
 					<img
 						width={80}
 						height={30}
-						src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG32.png"
+						src="https://www.freepnglogos.com/uploads/star-wars-logo-png-10.png"
 						alt="Star Wars"
 					/>
 				</Link>
 
 				<Navbar.Collapse className="justify-content-end">
-					<DropdownButton title="Favorites">
-						<Dropdown.Item>{FavoriteAdd}</Dropdown.Item>
+					<DropdownButton variant="Primary" title="Favorites">
+						<Dropdown.Item>{ShowFavorites}</Dropdown.Item>
 					</DropdownButton>
 				</Navbar.Collapse>
 			</Navbar>

@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import { PlanetDesc } from "../component/planetdesc";
 import { Context } from "../store/appContext";
 
-export const InfoPlanet = () => (
+export const InfoPlanet = () => {
 	const params = useParams();
 	const { store } = useContext(Context);
 	return (
@@ -26,4 +26,3 @@ export const InfoPlanet = () => (
 		</Container>
 	);
 };
-
