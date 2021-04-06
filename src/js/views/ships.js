@@ -18,8 +18,8 @@ export const Ships = () => {
 							<div className="col-md-4 mb-3" key={index}>
 								<Card2
 									name={"Name: " + item.name}
-									climate={"Climate: " + item.climate}
-									terrain={"Terrain: " + item.terrain}
+									max_atmosphering_speed={"Max Atmosphering Speed: " + item.max_atmosphering_speed}
+									starship_class={"Starship Class: " + item.starship_class}
 									index={index}
 								/>
 							</div>

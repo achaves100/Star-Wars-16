@@ -1,9 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-            peoples: [],
-            planets: [],
-            ships: [],
+			peoples: [],
+			planets: [],
+			ships: [],
 
 			demo: [
 				{
@@ -31,9 +31,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ planets: data.results });
-            },
-            
-            loadShips: async () => {
+			},
+
+			loadShips: async () => {
 				const url = "https://swapi.dev/api/starships/";
 				const response = await fetch(url);
 				const data = await response.json();
