@@ -10,7 +10,6 @@ import { InfoPerson } from "./views/infoperson";
 import { InfoPlanet } from "./views/infoplanet";
 import { InfoShip } from "./views/infoship";
 
-// import { Ships } from "./views/ships";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
@@ -28,11 +27,12 @@ const Layout = () => {
 	const { store, actions } = useContext(Context);
 	const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		state.actions.loadPeoples();
-		state.actions.loadPlanets();
-		setLoading(false);
-	}, []);
+	// useEffect(() => {
+	// 	state.actions.loadPeoples();
+	// 	state.actions.loadPlanets();
+	// 	state.actions.loadShips();
+	// 	setLoading(false);
+	// }, []);
 
 	return (
 		<div className="d-flex flex-column">

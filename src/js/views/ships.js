@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-import { Card2 } from "../component/card2";
+import { Card3 } from "../component/card2";
 
 export const Ships = () => {
 	const { store, actions } = useContext(Context);
@@ -15,7 +15,7 @@ export const Ships = () => {
 					{store.ships.map((item, index) => {
 						return (
 							<div className="col-md-4 mb-3" key={index}>
-								<Card2
+								<Card3
 									name={"Name: " + item.name}
 									max_atmosphering_speed={"Max Atmosphering Speed: " + item.max_atmosphering_speed}
 									starship_class={"Starship Class: " + item.starship_class}
