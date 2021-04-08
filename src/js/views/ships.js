@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-import { Card3 } from "../component/card2";
+import { Card3 } from "../component/card3";
 
 export const Ships = () => {
 	const { store, actions } = useContext(Context);
 	console.log("data", store.ships);
-	useEffect(() => {
-		actions.loadShips();
-	}, []);
+	// useEffect(() => {
+	// 	actions.loadShips();
+	// }, []);
 	return (
 		<>
 			<div className="Container">

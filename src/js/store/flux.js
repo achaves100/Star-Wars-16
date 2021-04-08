@@ -32,10 +32,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			loadShips: async () => {
-				const url = "https://swapi.dev/api/planets/";
+				const url = "https://swapi.dev/api/starships/";
 				const response = await fetch(url);
 				const data = await response.json();
-				setStore({ planets: data.results });
+				setStore({ ships: data.results });
 			},
 
 			// Use getActions to call a function within a fuction

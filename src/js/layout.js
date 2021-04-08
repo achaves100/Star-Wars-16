@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Persons } from "./views/persons";
-import { Planets } from "./views/persons";
+import { Planets } from "./views/planets";
 import { Ships } from "./views/ships";
 
 import { InfoPerson } from "./views/infoperson";
@@ -27,12 +27,12 @@ const Layout = () => {
 	const { store, actions } = useContext(Context);
 	const [loading, setLoading] = useState(true);
 
-	// useEffect(() => {
-	// 	state.actions.loadPeoples();
-	// 	state.actions.loadPlanets();
-	// 	state.actions.loadShips();
-	// 	setLoading(false);
-	// }, []);
+	useEffect(() => {
+		actions.loadPeoples();
+		actions.loadPlanets();
+		actions.loadShips();
+		setLoading(false);
+	}, []);
 
 	return (
 		<div className="d-flex flex-column">

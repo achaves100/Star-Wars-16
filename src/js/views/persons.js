@@ -5,9 +5,9 @@ import { Card } from "../component/card";
 export const Persons = () => {
 	const { store, actions } = useContext(Context);
 	console.log("data", store.peoples);
-	useEffect(() => {
-		actions.loadPeoples();
-	}, []);
+	// useEffect(() => {
+	// 	actions.loadPeoples();
+	// }, []);
 	return (
 		<>
 			<div className="Container">
