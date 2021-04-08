@@ -32,13 +32,6 @@ export const PlanetDesc = props => {
 									Kenobi spent years in hiding there. Once known as a hive of scum and villainy,
 									Tatooine has become quieter since the end of the Galactic Civil War.
 								</p>
-								<p>
-									Initially inhabited by native Jawa and Tusken Raider species, it saw a population
-									explosion following the search for valuable mining deposits on the planet silicate
-									surface. Finding the ore to have unwanted metallurgic properties, mining firms left
-									the planet en masse, leaving behind valuable equipment, most notably large
-									sandcrawlers, which were later used by the Jawa population.
-								</p>
 							</h6>
 						</Container>
 					</Col>

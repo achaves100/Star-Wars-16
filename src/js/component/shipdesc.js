@@ -35,14 +35,6 @@ export const ShipDesc = props => {
 									firepower to impressive – and downright illegal – levels. The price of such
 									tinkering? The Falcon can be unpredictable, with her hyperdrive particularly balky.
 								</p>
-								<p>
-									Despite her flaws, she’s beloved by her owners – Han Solo and Chewbacca spent years
-									searching the galaxy for the ship they once called home, rejoicing when they finally
-									reclaimed her. The Millennium Falcon was a YT-1300 light freighter of the YT-1300f
-									variety.[1] Its basic shape was defined by two convex saucers welded together, a
-									pair of front-facing mandibles and an outrigger-style, side-mounted cockpit with
-									transparisteel viewports.
-								</p>
 							</h6>
 						</Container>
 					</Col>
