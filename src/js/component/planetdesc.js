@@ -9,12 +9,7 @@ export const PlanetDesc = props => {
 				<Row>
 					<Col xs={6} md={6}>
 						<Container>
-							<Image
-								src="https://images.saymedia-content.com/.image/t_share/MTc1MTEzODQ1NTYzNjY0MTk2/benjamin-coxs-top-20-coolest-star-wars-characters.jpg"
-								width={550}
-								height={375}
-								rounded
-							/>
+							<Image src="https://wallpapercave.com/wp/3LX78BY.jpg" width={550} height={375} rounded />
 						</Container>
 					</Col>
 

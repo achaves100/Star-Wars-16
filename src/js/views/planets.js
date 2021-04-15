@@ -4,7 +4,7 @@ import { Card2 } from "../component/card2";
 
 export const Planets = () => {
 	const { store, actions } = useContext(Context);
-
+	console.log("data", store.planets);
 	// useEffect(() => {
 	// 	actions.loadPlanets();
 	// 	console.log("today", store.planets);
