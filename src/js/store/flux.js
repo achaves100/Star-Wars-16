@@ -4,7 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			peoples: [],
-			favorites: ["1", "2"],
+			favorites: [],
 
 			demo: [
 				{
@@ -39,6 +39,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ ships: data.results });
+			},
+			addFavorites: variable => {
+				let favoritos = getStore().favorites;
+				favoritos = favoritos.concat(variable);
+				setStore({ favorites: [...favoritos] });
+			},
+
+			deleteFav: variable => {
+				let favoritos = getStore().favorites;
+				let borrar = favoritos.find(el => el === variable);
+				let index = favoritos.indexOf(borrar);
+				favoritos.splice(index, 1);
+				setStore({ favorites: [...favoritos] });
 			},
 
 			// Use getActions to call a function within a fuction

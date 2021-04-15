@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 export const NavbarMenu = () => {
 	const { store, actions } = useContext(Context);
 
-	const DeleteFavorite = index => {
-		actions.removeFavorites(index);
+	const DeleteFavorite = item => {
+		actions.deleteFav(item);
 	};
 
 	const ShowFavorites = () => {
@@ -18,7 +18,7 @@ export const NavbarMenu = () => {
 					type="button"
 					className="btn btn-dark float-right"
 					onClick={e => {
-						DeleteFavorite(index);
+						DeleteFavorite(item);
 					}}>
 					<i className="fas fa-trash" />
 				</button>
